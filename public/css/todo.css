@@ -1,0 +1,100 @@
+  
+.content {
+    border: none;
+    font-size: 14px;
+    width: 500px;
+  }
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 5%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Add a color to the delete button */
+.delete {
+  background-color: #f44336;
+}
+
+/* Full-width input fields */
+input[type=text] {
+  width: 50%;
+  padding: 10px;
+  
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+label {
+  color:grey;
+  font-size: 10px;
+  width: 50px;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  font-size: 5px;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  align-items: flex-start;
+}
+
+.container input {
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: inline-block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

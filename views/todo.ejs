@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/todo.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/todo.css">
+  </head>
+  <body>
+    <style> 
+      h1 {text-align: center;}
+      p {text-align: center;}
+      div {text-align: center;}
+    </style>
+    <div class="add">
+      <h2> Add Todo</h2>
+      <form action='/todo' method='POST'>
+        <input type='text' placeholder="Enter Text Here" name='content'>
+        <button class="add" type='submit' value='add'> Add </button>
+      </form>
+    </div>
+    <div class="list">
+        <% for (const todo of todos) { %>
+            <div class="elements">
+              <label class="container">
+                <input class="checkbox" type="checkbox" id="enabled" data-id=<%= todo.id %> <%= todo.isCompleted ? "checked" : null %> >
+                <span class="checkmark"></span>
+              </label>
+              <input class="content" type="text"  readonly name="content" data-edit-id=<%= todo.id %> value="<%= todo.content %>">
+              <button class="edit">Edit</button>
+              <button class="delete" data-delete-id=<%= todo.id %>>Delete</button> 
+          </div>
+          <label class='updatedAt'> Last Updated At  @ <%= (todo.updatedAt) %></label>
+        <% } %>
+    
+    </div>
+    </div>
+  </body>
+</html>
