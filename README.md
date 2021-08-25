@@ -15,6 +15,7 @@ $ npm install
 The app requires:
 - A postgres database to store app data.
 
+.dev.sample and .test.sample are in directory, by removing .sample extension it will consider that enviornment 
 Below is an example development `.env` file to start with (this should be created in the root directory and will be automatically pulled into the app using dotenv)
 ```
 # App
