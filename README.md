@@ -1,6 +1,6 @@
 ## Description
 
-This is the project for the Opencare-Sync API.
+This is the project for the ToDo Application.
 
 This API uses Nest.js as an API Framework, and Typescript as the language of choice.
 
