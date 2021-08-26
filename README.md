@@ -15,11 +15,11 @@ $ npm install
 The app requires:
 - A postgres database to store app data.
 
-.dev.sample and .test.sample are in directory, by removing .sample extension it will consider that enviornment 
+.dev.sample and .test.sample are in directory, by removing .sample extension it will consider that enviornment <br />
 Below is an example development `.env` file to start with (this should be created in the root directory and will be automatically pulled into the app using dotenv)
 ```
 # App
-PORT=3032
+PORT=3000
 # Database
 DATABASE_URL=postgres://postgres:postgres@localhost:5432/todo_sample
 
@@ -85,6 +85,9 @@ Subscribers can be used to track each changes and events can be persisted
 
 ## Sessions
 #Todo: Redis can be used to store session and user information from authentication
+
+## Containerization 
+#Todo: Docker images can be built from node or alpine and use nginX engine, Docker-compose would be needed to build images for nest and postgres 
 
 ## Pagination
 #Todo: Todos can be paginated 
