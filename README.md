@@ -59,10 +59,35 @@ $ npm run migration:run
 $ npm run migration:revert
 ```
 
+## Endpoints
+**/** endpoint will display Hello World!
+**/todo** endpoint will list all current Visible and Non Completed Todos 
+
+## Functionalities
+This Application uses ejs for UI rendering
+
+Todo will be ordered based on ids
+Edit Button will allow to edit todo and save
+Delete Button will allow to delete todo from the list 
+
+# Consideration
+.However it can be further implemented to sort by due
+Filters can be added to show completed todos or past todos
+Delete can be soft delete by  using isVisible flag 
+Factory can be used to create sample todos 
+
 ## Authentication
-
 #Todo: Authentication to be implemented for this application
+#Todo: Third party authentication can bs used such as google, facebook, etc...
 
+## Change Events or Event Log
+Subscribers can be used to track each changes and events can be persisted
+
+## Sessions
+#Todo: Redis can be used to store session and user information from authentication
+
+## Pagination
+#Todo: Todos can be paginated 
 
 ## Release Process
 Release Process to be implemented for this application, Grunt, CodeShip, AzureDevOps can be used 
