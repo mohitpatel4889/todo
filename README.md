@@ -60,24 +60,24 @@ $ npm run migration:revert
 ```
 
 ## Endpoints
-**/** endpoint will display Hello World!
-**/todo** endpoint will list all current Visible and Non Completed Todos 
+#**/** endpoint will display Hello World!
+#**/todo** endpoint will list all current Visible and Non Completed Todos 
 
 ## Functionalities
-This Application uses ejs for UI rendering
+This Application uses ejs for UI rendering 
 
-Todo will be ordered based on ids
-Edit Button will allow to edit todo and save
-Delete Button will allow to delete todo from the list 
+Todo will be ordered based on ids <br />
+Edit Button will allow to edit todo and save<br />
+Delete Button will allow to delete todo from the list  <br />
 
 # Consideration
-.However it can be further implemented to sort by due
-Filters can be added to show completed todos or past todos
-Delete can be soft delete by  using isVisible flag 
+Sorting can be done by priority or due date  <br />
+Filters can be added to show completed todos or past todos <br />
+Delete can be soft delete by  using isVisible flag <br />
 Factory can be used to create sample todos 
 
 ## Authentication
-#Todo: Authentication to be implemented for this application
+#Todo: Authentication to be implemented for this application <br />
 #Todo: Third party authentication can bs used such as google, facebook, etc...
 
 ## Change Events or Event Log
